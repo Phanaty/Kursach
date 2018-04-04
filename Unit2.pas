@@ -92,16 +92,16 @@ begin
     case ComboBox1.ItemIndex of
     0:
     begin
-      StringGrid1.Height := 66 ;
+      StringGrid1.Height := 54 ;
       StringGrid1.RowCount := 2;
-      StringGrid2.Height := 66 ;
+      StringGrid2.Height := 54 ;
       StringGrid2.RowCount := 2;
-      StringGrid3.Height := 66 ;
+      StringGrid3.Height := 54 ;
       StringGrid3.RowCount := 2;
     end;
     1:
     begin
-      StringGrid1.Height := 97 ;
+      StringGrid1.Height := 79 ;
       StringGrid1.RowCount := 3;
       StringGrid2.Height := 97 ;
       StringGrid2.RowCount := 3;
@@ -110,7 +110,7 @@ begin
     end;
     2:
     begin
-      StringGrid1.Height := 129 ;
+      StringGrid1.Height := 104 ;
       StringGrid1.RowCount := 4 ;
       StringGrid2.Height := 129 ;
       StringGrid2.RowCount := 4 ;
@@ -119,7 +119,7 @@ begin
     end;
     3:
     begin
-      StringGrid1.Height := 160 ;
+      StringGrid1.Height := 129 ;
       StringGrid1.RowCount := 5 ;
       StringGrid2.Height := 160 ;
       StringGrid2.RowCount := 5 ;
@@ -128,7 +128,7 @@ begin
     end;
     4:
     begin
-      StringGrid1.Height := 191 ;
+      StringGrid1.Height := 154 ;
       StringGrid1.RowCount := 6 ;
       StringGrid2.Height := 191 ;
       StringGrid2.RowCount := 6 ;
@@ -143,7 +143,7 @@ begin
    case ComboBox2.ItemIndex of
    0:
    begin
-   StringGrid1.Width := 66 ;
+   StringGrid1.Width := 54 ;
    StringGrid1.ColCount := 2 ;
    StringGrid2.Width := 66 ;
    StringGrid2.ColCount := 2 ;
@@ -152,7 +152,7 @@ begin
    end;
    1:
    begin
-   StringGrid1.Width := 97;
+   StringGrid1.Width := 79;
    StringGrid1.ColCount := 3 ;
    StringGrid2.Width := 97;
    StringGrid2.ColCount := 3 ;
@@ -161,7 +161,7 @@ begin
    end;
    2:
    begin
-   StringGrid1.Width := 127;
+   StringGrid1.Width := 104;
    StringGrid1.ColCount := 4 ;
    StringGrid2.Width := 127;
    StringGrid2.ColCount := 4 ;
@@ -170,7 +170,7 @@ begin
    end;
    3:
    begin
-   StringGrid1.Width := 160 ;
+   StringGrid1.Width := 129 ;
    StringGrid1.ColCount := 5 ;
    StringGrid2.Width := 160 ;
    StringGrid2.ColCount := 5 ;
@@ -179,7 +179,7 @@ begin
    end;
    4 :
    begin
-   StringGrid1.Width := 190;
+   StringGrid1.Width := 154;
    StringGrid1.ColCount := 6;
    StringGrid2.Width := 190;
    StringGrid2.ColCount := 6;
