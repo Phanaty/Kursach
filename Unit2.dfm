@@ -50,55 +50,19 @@ object Form2: TForm2
   object StringGrid1: TStringGrid
     Left = 136
     Top = 157
-    Width = 63
-    Height = 55
+    Width = 53
+    Height = 53
     ColCount = 2
-    DefaultColWidth = 28
+    DefaultColWidth = 24
     FixedCols = 0
     RowCount = 2
     FixedRows = 0
     PopupMenu = PopupMenu1
+    ScrollBars = ssNone
     TabOrder = 0
     ColWidths = (
-      28
-      28)
-    RowHeights = (
       24
       24)
-  end
-  object StringGrid2: TStringGrid
-    Left = 440
-    Top = 157
-    Width = 63
-    Height = 55
-    ColCount = 2
-    DefaultColWidth = 28
-    FixedCols = 0
-    RowCount = 2
-    FixedRows = 0
-    PopupMenu = PopupMenu1
-    TabOrder = 1
-    ColWidths = (
-      28
-      28)
-    RowHeights = (
-      24
-      24)
-  end
-  object StringGrid3: TStringGrid
-    Left = 752
-    Top = 157
-    Width = 63
-    Height = 55
-    ColCount = 2
-    DefaultColWidth = 28
-    FixedCols = 0
-    RowCount = 2
-    FixedRows = 0
-    TabOrder = 2
-    ColWidths = (
-      28
-      28)
     RowHeights = (
       24
       24)
@@ -110,7 +74,7 @@ object Form2: TForm2
     Height = 17
     Caption = #1057#1083#1086#1078#1077#1085#1080#1077
     Enabled = False
-    TabOrder = 3
+    TabOrder = 1
     OnClick = RadioButton1Click
   end
   object RadioButton2: TRadioButton
@@ -120,48 +84,8 @@ object Form2: TForm2
     Height = 17
     Caption = #1042#1099#1095#1080#1090#1072#1085#1080#1077
     Enabled = False
-    TabOrder = 4
+    TabOrder = 2
     OnClick = RadioButton2Click
-  end
-  object Edit1: TEdit
-    Left = 27
-    Top = 37
-    Width = 73
-    Height = 21
-    TabOrder = 5
-    Text = '2'
-  end
-  object Edit2: TEdit
-    Left = 202
-    Top = 37
-    Width = 73
-    Height = 21
-    TabOrder = 6
-    Text = '2'
-  end
-  object UpDown1: TUpDown
-    Left = 100
-    Top = 37
-    Width = 16
-    Height = 21
-    Associate = Edit1
-    Min = 2
-    Max = 6
-    Position = 2
-    TabOrder = 7
-    OnClick = UpDown1Click
-  end
-  object UpDown2: TUpDown
-    Left = 275
-    Top = 37
-    Width = 16
-    Height = 21
-    Associate = Edit2
-    Min = 2
-    Max = 6
-    Position = 2
-    TabOrder = 8
-    OnClick = UpDown2Click
   end
   object Button1: TButton
     Left = 592
@@ -176,7 +100,7 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 9
+    TabOrder = 3
     OnClick = Button1Click
   end
   object Button2: TButton
@@ -186,8 +110,90 @@ object Form2: TForm2
     Height = 33
     Caption = #1086#1095#1080#1089#1090#1082#1072' '#1084#1072#1090#1088#1080#1094
     Enabled = False
-    TabOrder = 10
+    TabOrder = 4
     OnClick = Button2Click
+  end
+  object ComboBox1: TComboBox
+    Left = 51
+    Top = 23
+    Width = 89
+    Height = 22
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    Text = #1089#1090#1088#1086#1082#1080
+    OnChange = ComboBox1Change
+    Items.Strings = (
+      '2'
+      '3'
+      '4'
+      '5'
+      '6')
+  end
+  object ComboBox2: TComboBox
+    Left = 186
+    Top = 23
+    Width = 89
+    Height = 22
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    Text = #1089#1090#1086#1083#1073#1094#1099
+    OnChange = ComboBox2Change
+    Items.Strings = (
+      '2'
+      '3'
+      '4'
+      '5'
+      '6')
+  end
+  object StringGrid2: TStringGrid
+    Left = 440
+    Top = 157
+    Width = 53
+    Height = 53
+    ColCount = 2
+    DefaultColWidth = 24
+    FixedCols = 0
+    RowCount = 2
+    FixedRows = 0
+    PopupMenu = PopupMenu1
+    ScrollBars = ssNone
+    TabOrder = 7
+    ColWidths = (
+      24
+      24)
+    RowHeights = (
+      24
+      24)
+  end
+  object StringGrid3: TStringGrid
+    Left = 792
+    Top = 157
+    Width = 53
+    Height = 53
+    ColCount = 2
+    DefaultColWidth = 24
+    FixedCols = 0
+    RowCount = 2
+    FixedRows = 0
+    PopupMenu = PopupMenu1
+    ScrollBars = ssNone
+    TabOrder = 8
+    ColWidths = (
+      24
+      24)
+    RowHeights = (
+      24
+      24)
   end
   object PopupMenu1: TPopupMenu
     Left = 928

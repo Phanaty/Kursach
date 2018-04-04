@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.411,C:\Users\evgen\Desktop\курсовая\Unit1.dfm=C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.260,=C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.101,C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\evgen\Desktop\курсовая\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.411,C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\evgen\Desktop\курсовая\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.101,C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\evgen\Desktop\курсовая\Unit2.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.411,C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\evgen\Desktop\курсовая\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.411,C:\Users\evgen\Desktop\курсовая\Unit1.pas=C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.101,C:\Users\evgen\Desktop\курсовая\Unit2.dfm=C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.114,C:\Users\evgen\Desktop\курсовая\Project1.dproj=C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.666,=C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.114,C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\evgen\Desktop\курсовая\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.101,C:\Users\evgen\Desktop\курсовая\Unit2.pas=C:\Users\evgen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.881,=C:\Users\evgen\Desktop\курсовая\Unit3.pas</Transaction>
   </Transactions>
 </BorlandProject>
