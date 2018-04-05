@@ -32,6 +32,9 @@ type
     procedure N2Click(Sender: TObject);
     procedure ComboBox2Change(Sender: TObject);
     procedure ComboBox1Change(Sender: TObject);
+    procedure StringGrid1KeyPress(Sender: TObject; var Key: Char);
+    procedure StringGrid2KeyPress(Sender: TObject; var Key: Char);
+    procedure StringGrid3KeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -67,20 +70,25 @@ procedure TForm2.Button1Click(Sender: TObject);
 
 procedure TForm2.Button2Click(Sender: TObject);
 begin
+     radioButton1.Checked := false;
+     radioButton2.Checked := false ;
+     label1.Visible := false;
+     label2.Visible := false;
+     Button1.Enabled := false;
      begin
      for i:= 0 to stringgrid3.RowCount-1 do  // обнуляем все матрицы
      for j:= 0 to stringgrid3.ColCount-1 do
-     Stringgrid3.Cells[j,i]:='0';
+     Stringgrid3.Cells[j,i]:=' ';
     end;
      begin
      for i:= 0 to stringgrid2.RowCount-1 do
      for j:= 0 to stringgrid3.ColCount-1 do   // обнуляем все матрицы
-     Stringgrid2.Cells[j,i]:='0';
+     Stringgrid2.Cells[j,i]:=' ';
     end;
     begin
     for i:= 0 to stringgrid1.RowCount-1 do   // обнуляем все матрицы
     for j:= 0 to stringgrid1.ColCount-1 do
-    Stringgrid1.Cells[j,i]:='0';
+    Stringgrid1.Cells[j,i]:=' ';
     end;
 end;
 
@@ -96,43 +104,43 @@ begin
       StringGrid1.RowCount := 2;
       StringGrid2.Height := 54 ;
       StringGrid2.RowCount := 2;
-      StringGrid3.Height := 54 ;
+      StringGrid3.Height := 55 ;
       StringGrid3.RowCount := 2;
     end;
     1:
     begin
       StringGrid1.Height := 79 ;
       StringGrid1.RowCount := 3;
-      StringGrid2.Height := 97 ;
+      StringGrid2.Height := 79 ;
       StringGrid2.RowCount := 3;
-      StringGrid3.Height := 97 ;
+      StringGrid3.Height := 79 ;
       StringGrid3.RowCount := 3 ;
     end;
     2:
     begin
       StringGrid1.Height := 104 ;
       StringGrid1.RowCount := 4 ;
-      StringGrid2.Height := 129 ;
+      StringGrid2.Height := 104 ;
       StringGrid2.RowCount := 4 ;
-      StringGrid3.Height := 129 ;
+      StringGrid3.Height := 104 ;
       StringGrid3.RowCount := 4 ;
     end;
     3:
     begin
       StringGrid1.Height := 129 ;
       StringGrid1.RowCount := 5 ;
-      StringGrid2.Height := 160 ;
+      StringGrid2.Height := 129 ;
       StringGrid2.RowCount := 5 ;
-      StringGrid3.Height := 160 ;
+      StringGrid3.Height := 129 ;
       StringGrid3.RowCount := 5 ;
     end;
     4:
     begin
       StringGrid1.Height := 154 ;
       StringGrid1.RowCount := 6 ;
-      StringGrid2.Height := 191 ;
+      StringGrid2.Height := 154 ;
       StringGrid2.RowCount := 6 ;
-      StringGrid3.Height := 191 ;
+      StringGrid3.Height := 154 ;
       StringGrid3.RowCount := 6 ;
     end;
 end;
@@ -145,45 +153,45 @@ begin
    begin
    StringGrid1.Width := 54 ;
    StringGrid1.ColCount := 2 ;
-   StringGrid2.Width := 66 ;
+   StringGrid2.Width := 54 ;
    StringGrid2.ColCount := 2 ;
-   StringGrid3.Width := 66 ;
+   StringGrid3.Width := 54 ;
    StringGrid3.ColCount := 2 ;
    end;
    1:
    begin
    StringGrid1.Width := 79;
    StringGrid1.ColCount := 3 ;
-   StringGrid2.Width := 97;
+   StringGrid2.Width := 79;
    StringGrid2.ColCount := 3 ;
-   StringGrid3.Width := 97;
+   StringGrid3.Width := 79;
    StringGrid3.ColCount := 3 ;
    end;
    2:
    begin
    StringGrid1.Width := 104;
    StringGrid1.ColCount := 4 ;
-   StringGrid2.Width := 127;
+   StringGrid2.Width := 104;
    StringGrid2.ColCount := 4 ;
-   StringGrid3.Width := 127;
+   StringGrid3.Width := 104;
    StringGrid3.ColCount := 4 ;
    end;
    3:
    begin
    StringGrid1.Width := 129 ;
    StringGrid1.ColCount := 5 ;
-   StringGrid2.Width := 160 ;
+   StringGrid2.Width := 129 ;
    StringGrid2.ColCount := 5 ;
-   StringGrid3.Width := 160 ;
+   StringGrid3.Width := 129 ;
    StringGrid3.ColCount := 5 ;
    end;
    4 :
    begin
    StringGrid1.Width := 154;
    StringGrid1.ColCount := 6;
-   StringGrid2.Width := 190;
+   StringGrid2.Width := 154;
    StringGrid2.ColCount := 6;
-   StringGrid3.Width := 190;
+   StringGrid3.Width := 154;
    StringGrid3.ColCount := 6;
    end;
 end;
@@ -209,19 +217,19 @@ begin
     begin
      ComboBox1.ItemIndex := 0;
      StringGrid1.RowCount := 2;
-     StringGrid1.Height := 66 ;
+     StringGrid1.Height := 54 ;
      StringGrid2.RowCount := 2;
-     StringGrid2.Height := 66 ;
+     StringGrid2.Height := 54 ;
      StringGrid3.RowCount := 2;
-     StringGrid3.Height := 66 ;
+     StringGrid3.Height := 54 ;
     end;
     begin
       ComboBox2.ItemIndex := 0 ;
-      StringGrid1.Width := 66 ;
+      StringGrid1.Width := 54 ;
       StringGrid1.ColCount := 2 ;
-      StringGrid2.Width := 66 ;
+      StringGrid2.Width := 54 ;
       StringGrid2.ColCount := 2 ;
-      StringGrid3.Width := 66 ;
+      StringGrid3.Width := 54 ;
       StringGrid3.ColCount := 2 ;
 
     end;
@@ -290,5 +298,29 @@ Label2.Visible := true ;
 Label1.Visible := false ;
 end;
 
+
+procedure TForm2.StringGrid1KeyPress(Sender: TObject; var Key: Char);
+begin
+  case key of
+  '0'..'9',#8:;
+  else key := #0;
+  end;
+end;
+
+procedure TForm2.StringGrid2KeyPress(Sender: TObject; var Key: Char);
+begin
+  case key of
+  '0'..'9',#8:;
+  else key := #0;
+  end;
+end;
+
+procedure TForm2.StringGrid3KeyPress(Sender: TObject; var Key: Char);
+begin
+  case key of
+  '0'..'9',#8:;
+  else key := #0;
+  end;
+end;
 
 end.

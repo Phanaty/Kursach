@@ -1,9 +1,9 @@
 object Form3: TForm3
   Left = 0
   Top = 0
-  Caption = 'Form3'
-  ClientHeight = 407
-  ClientWidth = 983
+  Caption = #1058#1088#1072#1085#1089#1087#1086#1085#1080#1088#1086#1074#1072#1085#1080#1077
+  ClientHeight = 421
+  ClientWidth = 1003
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -28,6 +28,7 @@ object Form3: TForm3
     PopupMenu = PopupMenu1
     ScrollBars = ssNone
     TabOrder = 0
+    OnKeyPress = StringGrid1KeyPress
     ColWidths = (
       24
       24)
@@ -48,6 +49,7 @@ object Form3: TForm3
     ScrollBars = ssNone
     TabOrder = 1
     Visible = False
+    OnKeyPress = StringGrid2KeyPress
     ColWidths = (
       24
       24)
@@ -112,7 +114,7 @@ object Form3: TForm3
     Top = 18
     Width = 113
     Height = 33
-    Caption = #1086#1095#1080#1089#1090#1082#1072' '#1084#1072#1090#1088#1080#1094
+    Caption = #1054#1095#1080#1090#1089#1082#1072' '#1084#1072#1090#1088#1080#1094
     Enabled = False
     TabOrder = 5
     OnClick = Button2Click

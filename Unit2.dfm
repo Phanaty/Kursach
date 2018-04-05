@@ -1,7 +1,7 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = #1057#1083#1086#1078#1077#1085#1080#1077' '#1080' '#1074#1099#1095#1080#1090#1072#1085#1080#1077
   ClientHeight = 421
   ClientWidth = 1003
   Color = clBtnFace
@@ -20,28 +20,28 @@ object Form2: TForm2
   TextHeight = 13
   object Label1: TLabel
     Left = 304
-    Top = 164
-    Width = 26
-    Height = 39
+    Top = 157
+    Width = 30
+    Height = 45
     Caption = '+'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -32
+    Font.Height = -37
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     Visible = False
   end
   object Label2: TLabel
-    Left = 304
-    Top = 164
-    Width = 14
-    Height = 39
+    Left = 318
+    Top = 157
+    Width = 16
+    Height = 45
     Anchors = []
     Caption = '-'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -32
+    Font.Height = -37
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
@@ -60,6 +60,7 @@ object Form2: TForm2
     PopupMenu = PopupMenu1
     ScrollBars = ssNone
     TabOrder = 0
+    OnKeyPress = StringGrid1KeyPress
     ColWidths = (
       24
       24)
@@ -89,9 +90,9 @@ object Form2: TForm2
   end
   object Button1: TButton
     Left = 592
-    Top = 168
+    Top = 157
     Width = 75
-    Height = 33
+    Height = 53
     Caption = '='
     Enabled = False
     Font.Charset = DEFAULT_CHARSET
@@ -168,6 +169,7 @@ object Form2: TForm2
     PopupMenu = PopupMenu1
     ScrollBars = ssNone
     TabOrder = 7
+    OnKeyPress = StringGrid2KeyPress
     ColWidths = (
       24
       24)
@@ -188,6 +190,7 @@ object Form2: TForm2
     PopupMenu = PopupMenu1
     ScrollBars = ssNone
     TabOrder = 8
+    OnKeyPress = StringGrid3KeyPress
     ColWidths = (
       24
       24)

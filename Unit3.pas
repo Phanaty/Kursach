@@ -24,6 +24,8 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure StringGrid1KeyPress(Sender: TObject; var Key: Char);
+    procedure StringGrid2KeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -54,6 +56,7 @@ end;
 
 procedure TForm3.Button2Click(Sender: TObject);
 begin
+    StringGrid2.Visible := false;
     begin
      for i:= 0 to stringgrid1.RowCount-1 do  // обнуляем все матрицы
      for j:= 0 to stringgrid1.ColCount-1 do
@@ -73,37 +76,37 @@ begin
     case ComboBox1.ItemIndex of
     0:
     begin
-      StringGrid1.Height := 66 ;
+      StringGrid1.Height := 54 ;
       StringGrid1.RowCount := 2;
-      StringGrid2.Height := 66 ;
+      StringGrid2.Height := 54 ;
       StringGrid2.RowCount := 2;
     end;
     1:
     begin
-      StringGrid1.Height := 97 ;
+      StringGrid1.Height := 79 ;
       StringGrid1.RowCount := 3;
-      StringGrid2.Height := 97 ;
+      StringGrid2.Height := 79 ;
       StringGrid2.RowCount := 3;
     end;
     2:
     begin
-      StringGrid1.Height := 129 ;
+      StringGrid1.Height := 104 ;
       StringGrid1.RowCount := 4 ;
-      StringGrid2.Height := 129 ;
+      StringGrid2.Height := 104 ;
       StringGrid2.RowCount := 4 ;
     end;
     3:
     begin
-      StringGrid1.Height := 160 ;
+      StringGrid1.Height := 129 ;
       StringGrid1.RowCount := 5 ;
-      StringGrid2.Height := 160 ;
+      StringGrid2.Height := 129 ;
       StringGrid2.RowCount := 5 ;
     end;
     4:
     begin
-      StringGrid1.Height := 191 ;
+      StringGrid1.Height := 154 ;
       StringGrid1.RowCount := 6 ;
-      StringGrid2.Height := 191 ;
+      StringGrid2.Height := 154 ;
       StringGrid2.RowCount := 6 ;
     end;
 end;
@@ -115,37 +118,37 @@ begin
    case ComboBox2.ItemIndex of
    0:
    begin
-   StringGrid1.Width := 66 ;
+   StringGrid1.Width := 54 ;
    StringGrid1.ColCount := 2 ;
-   StringGrid2.Width := 66 ;
+   StringGrid2.Width := 54 ;
    StringGrid2.ColCount := 2 ;
    end;
    1:
    begin
-   StringGrid1.Width := 97;
+   StringGrid1.Width := 79;
    StringGrid1.ColCount := 3 ;
-   StringGrid2.Width := 97;
+   StringGrid2.Width := 79;
    StringGrid2.ColCount := 3 ;
    end;
    2:
    begin
-   StringGrid1.Width := 127;
+   StringGrid1.Width := 104;
    StringGrid1.ColCount := 4 ;
-   StringGrid2.Width := 127;
+   StringGrid2.Width := 104;
    StringGrid2.ColCount := 4 ;
    end;
    3:
    begin
-   StringGrid1.Width := 160 ;
+   StringGrid1.Width := 129 ;
    StringGrid1.ColCount := 5 ;
-   StringGrid2.Width := 160 ;
+   StringGrid2.Width := 129 ;
    StringGrid2.ColCount := 5 ;
    end;
    4 :
    begin
-   StringGrid1.Width := 190;
+   StringGrid1.Width := 154;
    StringGrid1.ColCount := 6;
-   StringGrid2.Width := 190;
+   StringGrid2.Width := 154;
    StringGrid2.ColCount := 6;
    end;
 end;
@@ -160,8 +163,8 @@ begin
    Button2.Enabled := false ;
    StringGrid1.RowCount :=2;
    StringGrid1.ColCount := 2;
-   StringGrid1.Width := 67;
-   StringGrid1.Height := 67;
+   StringGrid1.Width := 54;
+   StringGrid1.Height := 54;
    begin
     for i:= 0 to stringgrid2.RowCount-1 do   //обнуляем матрицы
     for j:= 0 to stringgrid2.ColCount-1 do
@@ -197,6 +200,22 @@ for i := 0 to StringGrid1.RowCount do
       StringGrid1.Cells[j,i] := '';
       StringGrid2.Cells[j,i] := '';
     end;
+end;
+
+procedure TForm3.StringGrid1KeyPress(Sender: TObject; var Key: Char);
+begin
+  case key of
+  '0'..'9',#8:;
+  else key := #0;
+  end;
+end;
+
+procedure TForm3.StringGrid2KeyPress(Sender: TObject; var Key: Char);
+begin
+  case key of
+  '0'..'9',#8:;
+  else key := #0;
+  end;
 end;
 
 end.

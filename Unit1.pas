@@ -11,8 +11,11 @@ type
     Button1: TButton;
     Label1: TLabel;
     Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,7 +29,7 @@ implementation
 
 {$R *.dfm}
 
-uses Unit2, Unit3;
+uses Unit2, Unit3, Unit4;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
@@ -36,6 +39,11 @@ end;
 procedure TForm1.Button2Click(Sender: TObject);
 begin
 Form3.Show;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+Form4.show;
 end;
 
 end.

@@ -1,7 +1,6 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
   ClientHeight = 505
   ClientWidth = 272
   Color = clHighlightText
@@ -44,5 +43,22 @@ object Form1: TForm1
     Caption = #1058#1088#1072#1085#1089#1087#1086#1085#1080#1088#1086#1074#1072#1085#1080#1077
     TabOrder = 1
     OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 40
+    Top = 168
+    Width = 185
+    Height = 41
+    Caption = #1059#1084#1085#1086#1078#1077#1085#1080#1077' '#1084#1072#1090#1088#1080#1094
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 40
+    Top = 384
+    Width = 185
+    Height = 41
+    Caption = #1057#1087#1088#1072#1074#1082#1072
+    TabOrder = 3
   end
 end
